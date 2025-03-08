@@ -68,3 +68,24 @@ This system is designed to track a website traffic by unique clients.
      *`TestPage1.php:`* Simple page to test the tracker script.
      *`TestPage2.php:`* Simple page to test the tracker script.
      *`TrackerReport.php:`* Main page where we can filter by a date range and get track information.
+
+## Initial Configuration
+
+### System Requirements
+- Web Server (XAMPP).
+
+### Configuration Steps
+1. Clone this repository in the path `C:\xampp\htdocs\website_traffic_tracker`.
+2. Import the file `tracker_db.sql` in your DB to create the table.
+3. Setup `config/config.php` with your DB credentials.
+
+### Project Execution
+Go to `localhost/website_traffic_tracker` in your browser to start the system.
+
+### Usage
+Open `localhost/website_traffic_tracker/track-report` to open the main page, here you can filter by a date range to get a report of unique visits per page.
+
+Open `localhost/website_traffic_tracker/test-page-1` or `localhost/website_traffic_tracker/test-page-1` to trigger the script that will track the visitor data
+
+### Notes
+Currently there is a function that generates random IPs in order to simulate unique visits per page, but is in the same function commented the real code that gets the real IP.
